@@ -10,11 +10,13 @@ class MazoTest extends TestCase {
      * Valida que se puedan crear mazos de cartas.
      */
     public function testExiste() {
+        $CantidadCartas = 40;
         $mazo = new Mazo($CantidadCartas);
         $this->assertTrue(isset($mazo));
     }
 
     public function testMezclable() {
+        $CantidadCartas = 40;
         $mazo = new Mazo($CantidadCartas);
         $this->assertTrue($mazo->mezclar());
     }
