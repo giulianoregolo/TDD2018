@@ -26,5 +26,14 @@ class MazoTest extends TestCase {
         $mazo = new Mazo($CantidadCartas);
         $this->assertEquals($mazo->obtenerCantidadCartas(),40);
     }
+    
+    public function testVacio(){
+        $cantidadCartas = 40;
+        $contador = 0;
+        $mazo = new Mazo($cartas);
+        while($this->assertEquals($mazo->cartas[$contador],Null);){
+            $contador++;
+        }
+    }
 
 }
