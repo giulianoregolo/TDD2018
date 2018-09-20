@@ -10,30 +10,44 @@ class MazoTest extends TestCase {
      * Valida que se puedan crear mazos de cartas.
      */
     public function testExiste() {
-        $CantidadCartas = 40;
-        $mazo = new Mazo($CantidadCartas);
+        $CantidadCartas;
+        $cartas = array(1,2,3,4);
+        $mazo = new Mazo($cartas);
         $this->assertTrue(isset($mazo));
     }
 
     public function testMezclable() {
-        $CantidadCartas = 40;
-        $mazo = new Mazo($CantidadCartas);
-        $this->assertTrue($mazo->mezclar());
+        $cartas = array(1,2,3,4);
+        $mazo = new Mazo($cartas);
+        $this->assertTrue($mazo->mezclar(),$cartas);
     }
     
     public function testCantcartas(){
-        $CantidadCartas = 40;
-        $mazo = new Mazo($CantidadCartas);
-        $this->assertEquals($mazo->obtenerCantidadCartas(),40);
+        $CantidadCartas;
+        $cartas = array(1,2,3,4);
+        $mazo = new Mazo($cartas);
+        $this->assertEquals($mazo->obtenerCantidadCartas(),4);
     }
     
-    public function testVacio(){
-        $cantidadCartas = 40;
-        $contador = 0;
+    public function testNoEstaVacio(){
+        $cartas = array(1,2,3,4);
         $mazo = new Mazo($cartas);
-        while($this->assertEquals($mazo->cartas[$contador],Null);){
-            $contador++;
-        }
+        $this->assertNotEquals($mazo->obtenerCantidadCartas(),0);
+    }
+    public function testEstaVacio(){
+        $cartas = array();
+        $mazo = new Mazo($cartas);
+        $this->assertEquals($mazo->obtenerCantidadCartas(),0);
     }
 
+    public function testCortar(){
+        $cartas = array(1,2,3,4);
+        $mazo = new Mazo($cartas);
+        $this->assertNotEquals($maso->obtenerCartas(),$cartas);
+    }    
+
+    public function testAgregarUnaCarta(){
+        $cartas = array(1,2,3,4);
+        $mazo = new Mazo($cartas);
+    }
 }
