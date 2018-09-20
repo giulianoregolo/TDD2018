@@ -10,20 +10,21 @@ class Mazo {
   
   public function __construct($cartas){
      $cont=0;
-   while($cont > $Cant){
-      $this->CartasdelMazo[$cont] = $cartas[$cont]; 
-   
-   }   
-     $this->cantidadcartas= $cont;
+     $this->CartasdelMazo = $cartas; 
+     $this->cantidadcartas= count($cartas);
   }
   
   public function mezclar() {
-    return TRUE;
+    shuffle($CartasdelMazo);
+    return $this->CartasdelMazo;
   }
   
   public function obtenerCantidadCartas(){
-  return $this->cantidadcartas;
+    return $this->cantidadcartas;
   }
   
+  public function obtenerCartas(){
+    return $this->CartasdelMazo;
+  }
   
 }
