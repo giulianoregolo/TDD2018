@@ -43,7 +43,7 @@ class MazoTest extends TestCase {
     public function testCortar(){
         $cartas = array(1,2,3,4);
         $mazo = new Mazo($cartas);
-        $this->assertNotEquals($maso->obtenerCartas(),$cartas);
+        $this->assertNotEquals($mazo->obtenerCartas(),$cartas);
     }    
 
     public function testAgregarUnaCarta(){

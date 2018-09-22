@@ -15,7 +15,7 @@ class Mazo {
   }
   
   public function mezclar() {
-    shuffle($CartasdelMazo);
+    $this->CartasdelMazo = shuffle($CartasdelMazo);
     return $this->CartasdelMazo;
   }
   
