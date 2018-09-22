@@ -19,7 +19,7 @@ class MazoTest extends TestCase {
     public function testMezclable() {
         $cartas = array(1,2,3,4);
         $mazo = new Mazo($cartas);
-        $this->assertTrue($mazo->mezclar(),$cartas);
+        $this->assertNotEquals($mazo->mezclar(),$cartas);
     }
     
     public function testCantcartas(){
@@ -43,11 +43,15 @@ class MazoTest extends TestCase {
     public function testCortar(){
         $cartas = array(1,2,3,4);
         $mazo = new Mazo($cartas);
+        $mazo->cortar();
         $this->assertNotEquals($mazo->obtenerCartas(),$cartas);
     }    
 
     public function testAgregarUnaCarta(){
         $cartas = array(1,2,3,4);
         $mazo = new Mazo($cartas);
+        $carta = array (5);
+        $mazo -> agregarcartas($carta);
+        $this->assertEquals($mazo->obtenerCantidadCartas(),5); 
     }
 }

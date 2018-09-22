@@ -9,13 +9,12 @@ class Mazo {
   protected $cantidadcartas;
   
   public function __construct($cartas){
-     $cont=0;
      $this->CartasdelMazo = $cartas; 
      $this->cantidadcartas= count($cartas);
   }
   
   public function mezclar() {
-    $this->CartasdelMazo = shuffle($CartasdelMazo);
+    $this->CartasdelMazo = shuffle($this->CartasdelMazo);
     return $this->CartasdelMazo;
   }
   
