@@ -25,5 +25,15 @@ class Mazo {
   public function obtenerCartas(){
     return $this->CartasdelMazo;
   }
+  public function cortar(){
+    
+
+    return $this->CartasdelMazo;
+  }
   
+  public function agregarcartas($carta){
+    $this->CartasdelMazo = array_merge($carta,$this->CartasdelMazo);
+    return $this->CartasdelMazo;
+  }
+
 }
