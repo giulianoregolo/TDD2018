@@ -38,4 +38,9 @@ class Mazo {
     return $this->CartasdelMazo;
   }
 
+  public function sacarunacarta(){
+    $carta = array_rand($this->CartasdelMazo);
+    return $carta;
+  }
+
 }
