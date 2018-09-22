@@ -11,21 +11,21 @@ class Carta {
     protected $tipo;
 
     public function __construct($Palo,$Numero,$Tipo){
-        $this->$palo = $Palo;
-        $this->$numero = $Numero;
-        $this->$tipo = $Tipo;
+        $this->palo = $Palo;
+        $this->numero = $Numero;
+        $this->tipo = $Tipo;
     }
 
 
     public function obtenerpalo(){
-        return $this->$palo;
+        return $this->palo;
     }
 
     public function obtenernumero(){
-        return $this->$numero;
+        return $this->numero;
     }
 
     public function obtenertipo(){
-        return $this->$Tipo;
+        return $this->Tipo;
     }
 }
