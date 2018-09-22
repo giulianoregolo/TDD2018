@@ -40,16 +40,16 @@ class MazoTest extends TestCase {
     }
     
     public function testNoEstaVacio(){
-        $cartas = array();
-        $mazo = new Mazo($cartas);
-        $this->assertNotEquals($mazo->obtenerCantidadCartas(),0);
-    }
-    public function testEstaVacio(){
         $carta1 = new Carta("rojo",1,"poker");
         $carta2= new Carta("rojo",2,"poker");
         $carta3 = new Carta("rojo",3,"poker");
         $carta4 = new Carta("rojo",4,"poker");
         $cartas = array($carta1,$carta2,$carta3,$carta4);
+        $mazo = new Mazo($cartas);
+        $this->assertNotEquals($mazo->obtenerCantidadCartas(),0);
+    }
+    public function testEstaVacio(){
+        $cartas = array();
         $mazo = new Mazo($cartas);
         $this->assertEquals($mazo->obtenerCantidadCartas(),0);
     }
