@@ -26,8 +26,9 @@ class Mazo {
     return $this->CartasdelMazo;
   }
   public function cortar(){
-    
-
+    $random = rand(0,$this->cantidadCartas);    
+    $pedazodemazo = array_slice($this->CartasdelMazo,0,$random);
+    $this->CartasdelMazo = array_merge($this->CartasdelMazo,$pedazodemazo);
     return $this->CartasdelMazo;
   }
   

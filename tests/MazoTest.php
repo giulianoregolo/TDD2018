@@ -45,6 +45,7 @@ class MazoTest extends TestCase {
         $mazo = new Mazo($cartas);
         $mazo->cortar();
         $this->assertNotEquals($mazo->obtenerCartas(),$cartas);
+        $this->assertEquals($mazo->obtenerCantidadCartas(),4);
     }    
 
     public function testAgregarUnaCarta(){
