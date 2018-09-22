@@ -34,6 +34,7 @@ class Mazo {
   
   public function agregarcartas($carta){
     $this->CartasdelMazo = array_merge($carta,$this->CartasdelMazo);
+    $this->cantidadcartas ++;
     return $this->CartasdelMazo;
   }
 
