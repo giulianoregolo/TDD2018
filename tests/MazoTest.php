@@ -60,6 +60,6 @@ class MazoTest extends TestCase {
         $cartas = array(1);
         $mazo = new Mazo($cartas);
         $carta = $mazo->sacarunacarta();
-        $this->assertEquals($carta,$cartas);
+        $this->assertEquals($carta,1);
     }
 }
