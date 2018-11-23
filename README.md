@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/giulianoregolo/TDD2018.svg?branch=master)](https://travis-ci.org/giulianoregolo/TDD2018)
 
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/giulianoregolo/TDD2018/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/giulianoregolo/TDD2018/?branch=master)
+
 # Consigna
 
 - Utilizando TDD.
