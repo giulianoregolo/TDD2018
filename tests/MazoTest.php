@@ -62,6 +62,11 @@ class MazoTest extends TestCase {
      $carta2= new Carta("rojo",2,"poker");
      $carta3 = new Carta("rojo",3,"poker");
      $carta4 = new Carta("rojo",4,"poker");
+     $carta5 = new Carta("rojo",5,"poker");
+     $carta6 = new Carta("rojo",6,"poker");
+     $carta7 = new Carta("rojo",7,"poker");
+     $carta8 = new Carta("rojo",8,"poker");
+     $carta9 = new Carta("rojo",9,"poker");
      $cartas = array($carta1,$carta2,$carta3,$carta4);
      $mazo = new Mazo($cartas);
      $mazo->cortar();

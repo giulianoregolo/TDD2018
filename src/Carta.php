@@ -26,6 +26,6 @@ class Carta {
     }
 
     public function obtenertipo(){
-        return $this->Tipo;
+        return $this->tipo;
     }
 }
